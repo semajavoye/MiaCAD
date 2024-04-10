@@ -538,6 +538,8 @@ include "header.php";
 
             <input type="submit" name="register" value="Register">
         </form>
+        
+        <p>Already have an account? <a href="login.php">Login</a></p>
     </div>
     <script src="js/register.js"></script>
 </body>
