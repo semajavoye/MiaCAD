@@ -1,0 +1,21 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    role VARCHAR(255) NOT NULL,
+    vorname VARCHAR(50),
+    nachname VARCHAR(50),
+    titel VARCHAR(50),
+    geburtsdatum DATE,
+    geschlecht CHAR(1),
+    nationalität VARCHAR(50),
+    telefonnummer VARCHAR(20),
+    email VARCHAR(100),
+    strasse VARCHAR(100),
+    ort VARCHAR(255),
+    plz INT,
+    strasse VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
