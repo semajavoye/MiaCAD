@@ -5,7 +5,7 @@ $css_files = array(
     "https://use.fontawesome.com/releases/v5.7.1/css/all.css",
 );
 include "header.php";
-include "db.php";
+include "../backend/db.php";
 
 session_start();
 
@@ -15,10 +15,10 @@ if (!isset($_SESSION['logged_in'])) {
     exit;
 }
 
-if(isset($_SESSION['username'])) {
+if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
 
-    
+
     $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
     $stmt->bindParam(':username', $username);
     $stmt->execute();
@@ -27,7 +27,6 @@ if(isset($_SESSION['username'])) {
     $title = $existingUser['titel'];
     $firstName = $existingUser['vorname'];
     $lastName = $existingUser['nachname'];
-
 }
 ?>
 

@@ -5,7 +5,7 @@ $css_files = array(
     "https://use.fontawesome.com/releases/v5.7.1/css/all.css",
 );
 include "header.php";
-include "db.php";
+include "../backend/db.php";
 ?>
 
 <body>
