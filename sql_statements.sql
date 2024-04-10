@@ -1,21 +1,19 @@
 CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    role VARCHAR(255) NOT NULL,
-    vorname VARCHAR(50),
-    nachname VARCHAR(50),
-    titel VARCHAR(50),
-    geburtsdatum DATE,
-    geschlecht CHAR(1),
-    nationalität VARCHAR(50),
-    telefonnummer VARCHAR(20),
-    email VARCHAR(100),
-    strasse VARCHAR(100),
-    ort VARCHAR(255),
-    plz INT,
-    strasse VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    id INT AUTO_INCREMENT PRIMARY KEY, -- Unique identifier for each user
+    username VARCHAR(50) NOT NULL UNIQUE, -- User's username
+    password VARCHAR(255) NOT NULL, -- User's password
+    email VARCHAR(100) NOT NULL UNIQUE, -- User's email address
+    role VARCHAR(255) NOT NULL, -- User's role
+    vorname VARCHAR(50), -- User's first name
+    nachname VARCHAR(50), -- User's last name
+    titel VARCHAR(50), -- User's title
+    geburtsdatum DATE, -- User's date of birth
+    geschlecht CHAR(1), -- User's gender
+    nationalität VARCHAR(50), -- User's nationality
+    telefonnummer VARCHAR(20), -- User's phone number
+    strasse VARCHAR(100), -- User's street address
+    ort VARCHAR(255), -- User's city
+    plz INT, -- User's postal code
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp of when the user was created
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP -- Timestamp of when the user was last updated
 );
