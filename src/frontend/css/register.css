@@ -1,9 +1,13 @@
-:root {
-    --primary-color: #3274d6;
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen,
+        ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial,
+        sans-serif;
+    font-size: 16px;
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #435165;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -11,11 +15,12 @@ body {
 .register {
     width: 90%;
     max-width: 600px;
-    margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .register h1 {
@@ -24,6 +29,10 @@ body {
     font-size: 24px;
     padding: 20px 0 20px 0;
     border-bottom: 1px solid #dee0e4;
+}
+
+.register form {
+    padding-top: 20px;
 }
 
 .form-group {
@@ -56,21 +65,58 @@ body {
     padding: 8px 10px;
 }
 
-.form-group input[type="submit"] {
+.register input[type="submit"] {
     width: 100%;
-    height: 40px;
+    padding: 15px;
+    margin-top: 20px;
     background-color: #3274d6;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
+    border: 0;
     cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
 }
 
 .form-group input[type="submit"]:hover {
     background-color: #285f8f;
 }
 
-.hidden {
-    display: none;
+.register form input:focus {
+    outline: none;
+    border-color: #3274d6;
+    box-shadow: 0 0 5px #3274d6;
+}
+
+.register form input:placeholder {
+    color: #a9a9a9;
+}
+
+.register form input:invalid {
+    border-color: #3274d6;
+}
+
+.register form input:valid {
+    border-color: #3274d6;
+}
+
+.register form select:focus {
+    outline: none;
+    border-color: #3274d6;
+    box-shadow: 0 0 5px #3274d6;
+}
+
+.register form select:placeholder {
+    color: #a9a9a9;
+}
+
+.register form select:hover {
+    border-color: #3274d6;
+}
+
+.register form select:invalid {
+    border-color: #3274d6;
+}
+
+.register form select:valid {
+    border-color: #3274d6;
 }

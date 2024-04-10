@@ -536,9 +536,7 @@ include "header.php";
                 </div>
             </div>
 
-            <div class="form-group">
-                <input type="submit" name="register" value="Register">
-            </div>
+            <input type="submit" name="register" value="Register">
         </form>
     </div>
     <script src="js/register.js"></script>

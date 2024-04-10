@@ -37,6 +37,7 @@ if (isset($_SESSION['username'])) {
         <h2>Dispatch System</h2>
         <p>Welcome back, <?php echo $title . " " . $firstName . " " . $lastName; ?>!</p>
         <p>Here you can manage your dispatches.</p>
+        <a href="cad.php">Go to the CAD System</a>
         <div class="news">
             <h2>News</h2>
             <p>There are no news at the moment.</p>
