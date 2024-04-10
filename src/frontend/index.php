@@ -5,6 +5,7 @@ $css_files = array(
     "https://use.fontawesome.com/releases/v5.7.1/css/all.css",
 );
 include "header.php";
+include "db.php";
 
 session_start();
 
@@ -16,6 +17,17 @@ if (!isset($_SESSION['logged_in'])) {
 
 if(isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
+
+    
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+    $stmt->bindParam(':username', $username);
+    $stmt->execute();
+    $existingUser = $stmt->fetch();
+
+    $title = $existingUser['titel'];
+    $firstName = $existingUser['vorname'];
+    $lastName = $existingUser['nachname'];
+
 }
 ?>
 
@@ -24,7 +36,7 @@ if(isset($_SESSION['username'])) {
         <?php include "page_header.php"; ?>
 
         <h2>Dispatch System</h2>
-        <p>Welcome back, <?php echo  ?>!</p>
+        <p>Welcome back, <?php echo $title . " " . $firstName . " " . $lastName; ?>!</p>
         <p>Here you can manage your dispatches.</p>
         <div class="news">
             <h2>News</h2>

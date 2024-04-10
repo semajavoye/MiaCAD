@@ -10,7 +10,7 @@ body {
 
 .register {
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -20,7 +20,10 @@ body {
 
 .register h1 {
     text-align: center;
-    color: #333;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
 }
 
 .form-group {
@@ -36,6 +39,7 @@ body {
     flex: 0 0 40px;
     text-align: center;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .input-group input,
@@ -45,6 +49,7 @@ body {
     padding: 0 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .input-group input[type="date"] {

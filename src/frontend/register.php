@@ -15,20 +15,18 @@ include "header.php";
                 <div class="input-group">
                     <label for="title"><i class="fas fa-user"></i></label>
                     <select name="title" id="title" required>
-                        <option value="mr">Mr.</option>
-                        <option value="mrs">Mrs.</option>
-                        <option value="miss">Miss</option>
+                        <option value="">Title</option>
                         <option value="dr">Dr.</option>
                         <option value="prof">Prof.</option>
                         <option value="other">Other</option>
                     </select>
-                    <input type="text" name="titleInput" id="titleInput" placeholder="Other Title" class="hidden">
+                    <input type="text" name="otherInput" id="otherInput" placeholder="Other Title" class="hidden">
                     <script>
                         document.getElementById("title").addEventListener("change", function() {
                             if (this.value === "other") {
-                                document.getElementById("titleInput").classList.remove("hidden");
+                                document.getElementById("otherInput").classList.remove("hidden");
                             } else {
-                                document.getElementById("titleInput").classList.add("hidden");
+                                document.getElementById("otherInput").classList.add("hidden");
                             }
                         });
                     </script>
@@ -269,6 +267,238 @@ include "header.php";
             <div class="form-group personalInformation">
                 <div class="input-group">
                     <label for="telefonnummer"><i class="fas fa-phone"></i></label>
+                    <select name="vorwahl" id="vorwahl">
+                        <option value="20">+20 Aegypten</option>
+                        <option value="240">+240 Aequatorialguinea</option>
+                        <option value="251">+251 Aethiopien</option>
+                        <option value="355">+355 Albanien</option>
+                        <option value="213">+213 Algerien</option>
+                        <option value="684">+684 Amerikanisch-Samoa</option>
+                        <option value="1809">+1809 Amerikanische Jungferninseln</option>
+                        <option value="376">+376 Andorra</option>
+                        <option value="244">+244 Angola</option>
+                        <option value="1809">+1809 Anguilla</option>
+                        <option value="67212">+67212 Antarktis Casey</option>
+                        <option value="67213">+67213 Antarktis Macquarrie Island</option>
+                        <option value="67210">+67210 Antarktis Davis</option>
+                        <option value="67211">+67211 Antarktis Mawson</option>
+                        <option value="1809">+1809 Antigua und Barbuda</option>
+                        <option value="54">+54 Argentinien</option>
+                        <option value="374">+374 Armenien</option>
+                        <option value="297">+297 Aruba</option>
+                        <option value="247">+247 Ascension</option>
+                        <option value="871">+871 Atlantischer Ozean (Ost)</option>
+                        <option value="874">+874 Atlantischer Ozean (West)</option>
+                        <option value="61">+61 Australien</option>
+                        <option value="6723">+6723 Australien Norfolkinsel</option>
+                        <option value="6724">+6724 Australien Weihnachtsinsel</option>
+                        <option value="1809">+1809 Bahamas</option>
+                        <option value="973">+973 Bahrain</option>
+                        <option value="880">+880 Bangladesch</option>
+                        <option value="1809">+1809 Barbados</option>
+                        <option value="32">+32 Belgien</option>
+                        <option value="501">+501 Belize</option>
+                        <option value="229">+229 Benin</option>
+                        <option value="1809">+1809 Bermuda</option>
+                        <option value="975">+975 Bhutan</option>
+                        <option value="95">+95 Birma</option>
+                        <option value="591">+591 Bolivien</option>
+                        <option value="387">+387 Bosnien-Herzegowina</option>
+                        <option value="267">+267 Botsuana</option>
+                        <option value="55">+55 Brasilien</option>
+                        <option value="1809">+1809 Britische Jungferninseln</option>
+                        <option value="673">+673 Brunei</option>
+                        <option value="359">+359 Bulgarien</option>
+                        <option value="226">+226 Burkina Faso</option>
+                        <option value="257">+257 Burundi</option>
+                        <option value="56">+56 Chile</option>
+                        <option value="886">+886 China (Taiwan)</option>
+                        <option value="86">+86 China (Volksrepublik)</option>
+                        <option value="682">+682 Cookinseln</option>
+                        <option value="506">+506 Costa Rica</option>
+                        <option value="45">+45 Daenemark</option>
+                        <option value="49" selected>+49 Deutschland</option>
+                        <option value="246">+246 Diego Garcia</option>
+                        <option value="1809">+1809 Dominica</option>
+                        <option value="1809">+1809 Dominikanische Republik</option>
+                        <option value="253">+253 Dschibuti</option>
+                        <option value="593">+593 Ecuador</option>
+                        <option value="225">+225 Elfenbeinkueste</option>
+                        <option value="503">+503 El Salvador</option>
+                        <option value="291">+291 Eritrea</option>
+                        <option value="372">+372 Estland</option>
+                        <option value="298">+298 Faeroeer</option>
+                        <option value="500">+500 Falklandinseln</option>
+                        <option value="679">+679 Fidschi</option>
+                        <option value="358">+358 Finnland</option>
+                        <option value="33">+33 Frankreich</option>
+                        <option value="594">+594 Franzoesisch-Guayana</option>
+                        <option value="689">+689 Franzoesisch-Polynesien</option>
+                        <option value="241">+241 Gabun</option>
+                        <option value="220">+220 Gambia</option>
+                        <option value="233">+233 Ghana</option>
+                        <option value="350">+350 Gibraltar</option>
+                        <option value="1809">+1809 Grenada</option>
+                        <option value="30">+30 Griechenland</option>
+                        <option value="299">+299 Groenland</option>
+                        <option value="44">+44 Grossbritannien</option>
+                        <option value="590">+590 Guadeloupe</option>
+                        <option value="671">+671 Guam</option>
+                        <option value="502">+502 Guatemala</option>
+                        <option value="224">+224 Guinea</option>
+                        <option value="245">+245 Guinea-Bissau</option>
+                        <option value="7">+7 GUS</option>
+                        <option value="592">+592 Guyana</option>
+                        <option value="509">+509 Haiti</option>
+                        <option value="504">+504 Honduras</option>
+                        <option value="852">+852 Hongkong</option>
+                        <option value="91">+91 Indien</option>
+                        <option value="873">+873 Indischer Ozean</option>
+                        <option value="62">+62 Indonesien</option>
+                        <option value="44">+44 Insel Man</option>
+                        <option value="964">+964 Irak</option>
+                        <option value="98">+98 Iran</option>
+                        <option value="353">+353 Irland</option>
+                        <option value="534">+534 Island</option>
+                        <option value="972">+972 Israel</option>
+                        <option value="39">+39 Italien</option>
+                        <option value="1876">+1876 Jamaika</option>
+                        <option value="81">+81 Japan</option>
+                        <option value="967">+967 Jemen (Arabische Republik)</option>
+                        <option value="962">+962 Jordanien</option>
+                        <option value="1809">+1809 Kaimaninseln</option>
+                        <option value="855">+855 Kambodscha</option>
+                        <option value="237">+237 Kamerun</option>
+                        <option value="1">+1 Kanada</option>
+                        <option value="44">+44 Kanalinseln</option>
+                        <option value="238">+238 Kap Verde</option>
+                        <option value="974">+974 Katar</option>
+                        <option value="254">+254 Kenia</option>
+                        <option value="686">+686 Kiribati</option>
+                        <option value="57">+57 Kolumbien</option>
+                        <option value="242">+242 Kongo</option>
+                        <option value="850">+850 Korea (Demokratische Republik)</option>
+                        <option value="82">+82 Korea (Republik)</option>
+                        <option value="385">+385 Kroatien</option>
+                        <option value="53">+53 Kuba</option>
+                        <option value="965">+965 Kuwait</option>
+                        <option value="856">+856 Laos</option>
+                        <option value="266">+266 Lesotho</option>
+                        <option value="371">+371 Lettland</option>
+                        <option value="961">+961 Libanon</option>
+                        <option value="231">+231 Liberia</option>
+                        <option value="218">+218 Libyen (Lib.-Arabische-Dscham.)</option>
+                        <option value="423">+423 Liechtenstein</option>
+                        <option value="370">+370 Litauen</option>
+                        <option value="352">+352 Luxemburg</option>
+                        <option value="853">+853 Macau</option>
+                        <option value="261">+261 Madagaskar</option>
+                        <option value="265">+265 Malawi</option>
+                        <option value="60">+60 Malaysia</option>
+                        <option value="960">+960 Malediven</option>
+                        <option value="223">+223 Mali</option>
+                        <option value="536">+536 Malta</option>
+                        <option value="670">+670 Marianen</option>
+                        <option value="212">+212 Marokko</option>
+                        <option value="692">+692 Marshallinseln</option>
+                        <option value="596">+596 Martinique</option>
+                        <option value="222">+222 Mauretanien</option>
+                        <option value="230">+230 Mauritius</option>
+                        <option value="269">+269 Mayotte</option>
+                        <option value="389">+389 Mazedonien</option>
+                        <option value="52">+52 Mexiko</option>
+                        <option value="691">+691 Mikronesien</option>
+                        <option value="3393">+3393 Monaco</option>
+                        <option value="976">+976 Mongolei</option>
+                        <option value="1809">+1809 Montserrat</option>
+                        <option value="258">+258 Mosambik</option>
+                        <option value="264">+264 Namibia</option>
+                        <option value="674">+674 Nauru</option>
+                        <option value="977">+977 Nepal</option>
+                        <option value="687">+687 Neukaledonien</option>
+                        <option value="64">+64 Neuseeland</option>
+                        <option value="505">+505 Nicaragua</option>
+                        <option value="599">+599 Niederlaendische Antillen</option>
+                        <option value="31">+31 Niederlande</option>
+                        <option value="227">+227 Niger</option>
+                        <option value="234">+234 Nigeria</option>
+                        <option value="683">+683 Niue-Inseln</option>
+                        <option value="44">+44 Nordirland</option>
+                        <option value="47">+47 Norwegen</option>
+                        <option value="226">+226 Obervolta</option>
+                        <option value="43">+43 Oesterreich</option>
+                        <option value="968">+968 Oman</option>
+                        <option value="92">+92 Pakistan</option>
+                        <option value="680">+680 Palau</option>
+                        <option value="507">+507 Panama</option>
+                        <option value="675">+675 Papua-Neuguinea</option>
+                        <option value="595">+595 Paraguay</option>
+                        <option value="872">+872 Pazifischer Ozean</option>
+                        <option value="51">+51 Peru</option>
+                        <option value="63">+63 Philippinen</option>
+                        <option value="48">+48 Polen</option>
+                        <option value="351">+351 Portugal</option>
+                        <option value="1809">+1809 Puerto Rico</option>
+                        <option value="262">+262 Reunion</option>
+                        <option value="250">+250 Ruanda</option>
+                        <option value="40">+40 Rumaenien</option>
+                        <option value="677">+677 Salomonen</option>
+                        <option value="260">+260 Sambia</option>
+                        <option value="685">+685 Samoa</option>
+                        <option value="378">+378 San Marino</option>
+                        <option value="259">+259 Sansibar</option>
+                        <option value="239">+239 Sao Tome und Principe</option>
+                        <option value="966">+966 Saudi Arabien</option>
+                        <option value="46">+46 Schweden</option>
+                        <option value="41">+41 Schweiz</option>
+                        <option value="221">+221 Senegal</option>
+                        <option value="381">+381 Serbien und Montenegro</option>
+                        <option value="248">+248 Seschellen</option>
+                        <option value="232">+232 Sierra Leone</option>
+                        <option value="263">+263 Simbabwe</option>
+                        <option value="65">+65 Singapur</option>
+                        <option value="42">+42 Slowakei</option>
+                        <option value="386">+386 Slowenien</option>
+                        <option value="252">+252 Somalia</option>
+                        <option value="34">+34 Spanien</option>
+                        <option value="94">+94 Sri Lanka</option>
+                        <option value="1809">+1809 St. Christoph und Nevis</option>
+                        <option value="290">+290 St. Helena</option>
+                        <option value="1809">+1809 St. Lucia</option>
+                        <option value="508">+508 St. Pierra und Miquelon</option>
+                        <option value="1809">+1809 St. Vincent und die Grenadien</option>
+                        <option value="249">+249 Sudan</option>
+                        <option value="27">+27 Suedafrika</option>
+                        <option value="597">+597 Suriname</option>
+                        <option value="268">+268 Swasiland</option>
+                        <option value="963" +963 8>Syrien</option>
+                        <option value="255">+255 Tansania</option>
+                        <option value="66">+66 Thailand</option>
+                        <option value="228">+228 Togo</option>
+                        <option value="690">+690 Tokelan</option>
+                        <option value="676">+676 Tonga</option>
+                        <option value="1809">+1809 Trinidad und Tobago</option>
+                        <option value="235">+235 Tschad</option>
+                        <option value="42">+42 Tschechien</option>
+                        <option value="90">+90 Tuerkei</option>
+                        <option value="216">+216 Tunesien</option>
+                        <option value="1809">+1809 Turks- und Caicos-Inseln</option>
+                        <option value="688">+688 Tuvalu</option>
+                        <option value="256">+256 Uganda</option>
+                        <option value="380">+380 Ukraine</option>
+                        <option value="36">+36 Ungarn</option>
+                        <option value="598">+598 Uruguay</option>
+                        <option value="678">+678 Vanuatu</option>
+                        <option value="396">+396 Vatikanstadt</option>
+                        <option value="58">+58 Venezuela</option>
+                        <option value="971">+971 Vereinigte Arabische Emirate</option>
+                        <option value="1">+1 Vereinigte Staaten (USA)</option>
+                        <option value="84">+84 Vietnam</option>
+                        <option value="681">+681 Wallis und Futuna</option>
+                        <option value="243">+243 Zaire</option>
+                        <option value="236">+236 Zentralafrikanische Republik</option>
+                        <option value="357">+357 Zypern</option>
+                    </select>
                     <input type="tel" name="telefonnummer" id="telefonnummer" placeholder="Phone Number" required>
                 </div>
                 <div class="input-group">
@@ -282,6 +512,10 @@ include "header.php";
                 <div class="input-group">
                     <label for="plz"><i class="fas fa-mail-bulk"></i></label>
                     <input type="text" name="plz" id="plz" placeholder="Postal Code" required>
+                </div>
+                <div class="input-group">
+                    <label for="land"><i class="fas fa-globe"></i></label>
+                    <input type="text" name="land" id="land" placeholder="Country" required>
                 </div>
                 <div class="input-group">
                     <label for="email"><i class="fas fa-envelope"></i></label>
