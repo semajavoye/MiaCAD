@@ -46,7 +46,7 @@ session_start();
                         displayTime.innerText = time.toLocaleTimeString("de-DE", {
                             hour12: false
                         });
-                        setTimeout(showTime, 1);
+                        setTimeout(showTime, 500);
                     }
 
                     showTime();
@@ -77,6 +77,9 @@ session_start();
             </div>
         </div>
 
+        <div class="main-content">
+            <?php include "sources/main_system.php"; ?>
+        </div>
     </div>
 </body>
 
