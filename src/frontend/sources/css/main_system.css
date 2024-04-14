@@ -1,0 +1,46 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.quick-command {
+    background-color: #3e3c40;
+    color: white;
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.quick-command .quick-command-header {
+    width: 100%;
+    background-color: #ff1818;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.quick-command .quick-command-header i {
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.quick-command .quick-command-body input[type="text"] {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    margin-bottom: 10px;
+}
