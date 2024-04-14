@@ -121,3 +121,7 @@ body {
 .register form select:valid {
     border-color: #3274d6;
 }
+
+.hidden {
+    display: none;
+}

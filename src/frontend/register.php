@@ -15,7 +15,7 @@ include "header.php";
                 <div class="input-group">
                     <label for="title"><i class="fas fa-user"></i></label>
                     <select name="title" id="title" required>
-                        <option value="">Title</option>
+                        <option value="none">Title</option>
                         <option value="dr">Dr.</option>
                         <option value="prof">Prof.</option>
                         <option value="other">Other</option>
