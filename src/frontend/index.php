@@ -33,14 +33,15 @@ if (isset($_SESSION['username'])) {
 <body>
     <div class="container">
         <?php include "page_header.php"; ?>
-
-        <h2>Dispatch System</h2>
-        <p>Welcome back, <?php echo $title . " " . $firstName . " " . $lastName; ?>!</p>
-        <p>Here you can manage your dispatches.</p>
-        <a href="cad.php">Go to the CAD System</a>
-        <div class="news">
-            <h2>News</h2>
-            <p>There are no news at the moment.</p>
+        <div class="content">
+            <h2>MiaCAD - Dispatch System</h2>
+            <p>Welcome back, <?php echo $title . " " . $firstName . " " . $lastName; ?>!</p>
+            <p>Here you can manage your dispatches.</p>
+            <a href="cad.php">Directly go to the CAD System</a>
+            <div class="news">
+                <h2>News</h2>
+                <p>There are no news at the moment.</p>
+            </div>
         </div>
     </div>
 

@@ -1,8 +1,28 @@
-body {
+* {
     font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #f3f4f7;
     margin: 0;
     padding: 0;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content a {
+    font-size: 26px;
+    color: #007bff;
+    text-decoration: dotted underline;
+    background-color: #cfcfcf;
+    border-radius: 5px;
 }
 
 h2 {
@@ -18,6 +38,6 @@ p {
 .news {
     margin-top: 40px;
     padding: 20px;
-    background-color: #f3f4f7;
+    background-color: #cfcfcf;
     border-radius: 5px;
 }
