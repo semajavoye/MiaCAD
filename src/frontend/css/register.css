@@ -122,6 +122,15 @@ body {
     border-color: #3274d6;
 }
 
+.logo {
+    width: auto;
+    height: 250px;
+    background-image: url("../img/miacad.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hidden {
     display: none;
 }

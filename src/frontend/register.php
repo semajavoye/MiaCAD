@@ -540,6 +540,7 @@ include "header.php";
         </form>
         
         <p>Already have an account? <a href="login.php">Login</a></p>
+        <div class="logo"></div>
     </div>
     <script src="js/register.js"></script>
 </body>
