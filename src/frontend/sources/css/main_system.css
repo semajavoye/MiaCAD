@@ -1,14 +1,20 @@
 .main-content {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.quick-command {
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.quick-command,
+.quick-call {
     background-color: #3e3c40;
     color: white;
     border: 1px solid #ccc;
-    width: 250px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -19,28 +25,92 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.quick-command .quick-command-header {
+.quick-command {
+    width: calc(30% - 5px); /* Adjusted width */
+    margin-right: 5px; /* Spacing between elements */
+}
+
+.quick-call {
+    width: calc(70% - 5px); /* Adjusted width */
+    margin-left: 5px; /* Spacing between elements */
+}
+
+.title-header {
     width: 100%;
-    background-color: #ff1818;
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 10px 10px 0 0;
 }
 
-.quick-command .quick-command-header i {
-    margin-left: 10px;
+.quick-command .quick-command-header {
+    background-color: #ff1818;
+}
+
+.quick-call .quick-call-header {
+    background-color: #006eff;
+}
+
+.active-calls .active-calls-header {
+    background-color: #8300a7;
+}
+
+.units .units-header {
+    background-color: #9f2500;
+}
+
+.title-header i {
+    margin-left: 20px;
     margin-right: 25px;
 }
 
-.quick-command .quick-command-body input[type="text"] {
-    width: 100%;
+.quick-command .quick-command-body input[type="text"],
+.quick-call .quick-call-body input[type="text"] {
+    width: 350px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     outline: none;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     background-color: #f2f2f2;
     color: #333;
     margin-bottom: 10px;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.active-calls {
+    background-color: #3e3c40;
+    color: white;
+    border: 1px solid #ccc;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: calc(70% - 5px); /* Adjusted width */
+    margin-right: 5px; /* Spacing between elements */
+}
+
+.units {
+    background-color: #3e3c40;
+    color: white;
+    border: 1px solid #ccc;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: calc(30% - 5px); /* Adjusted width */
+    margin-left: 5px; /* Spacing between elements */
 }
