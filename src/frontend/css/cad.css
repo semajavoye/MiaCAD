@@ -1,5 +1,8 @@
-body {
+* {
     font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #727272;
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@ body {
 
 .header {
     display: flex;
+    max-height: 90px;
     justify-content: space-between;
     border: 1px solid #ccc;
     margin-right: 10px;
@@ -25,7 +29,7 @@ body {
 .rightwrapper {
     display: flex;
     align-items: center;
-    width: 35%;
+    width: 55%;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -40,6 +44,7 @@ body {
     font-size: 16px;
     margin: 4px;
     cursor: pointer;
+    text-wrap: nowrap;
 }
 
 .button:hover {

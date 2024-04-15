@@ -54,20 +54,7 @@ include "./load_css.php"; ?>
         </div>
         <div class="active-calls-body content-body">
             <div class="active-calls-list">
-                <div class="active-call">
-                    <div class="active-call-header">
-                        <span>Location</span>
-                        <span>Call Type</span>
-                        <span>Patrol</span>
-                        <span>Time</span>
-                    </div>
-                    <div class="active-call-body">
-                        <span>1234 Example St</span>
-                        <span>Medical Emergency</span>
-                        <span>Patrol 1</span>
-                        <span>12:34</span>
-                    </div>
-                </div>
+                <?php include "active_calls.php"; ?>
             </div>
         </div>
     </div>
@@ -79,18 +66,7 @@ include "./load_css.php"; ?>
         </div>
         <div class="units-body content-body">
             <div class="units-list">
-                <div class="unit">
-                    <div class="unit-header">
-                        <span>Unit</span>
-                        <span>Location</span>
-                        <span>Status</span>
-                    </div>
-                    <div class="unit-body">
-                        <span>Patrol 1</span>
-                        <span>1234 Example St</span>
-                        <span>On Call</span>
-                    </div>
-                </div>
+                <?php include "on_duty_units.php"; ?>
             </div>
         </div>
     </div>

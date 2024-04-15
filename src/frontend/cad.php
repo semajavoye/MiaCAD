@@ -19,22 +19,22 @@ session_start();
         <div class="header">
             <div class="leftwrapper">
                 <div class="button map">
-                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-globe"> Home</i>
                     <a href=""></a>
                 </div>
                 <div class="button contacts">
-                    <i class="fas fa-book"></i>
+                    <i class="fas fa-book"> Contacts</i>
                     <a href=""></a>
                 </div>
                 <div class="button timer">
-                    <i class="fas fa-clock"></i>
+                    <i class="fas fa-clock"> Timer</i>
                     <a href=""></a>
                 </div>
                 <div class="button net">
-                    <i class="fas fa-broadcast-tower"></i>
+                    <i class="fas fa-broadcast-tower"> Radio</i>
                 </div>
                 <div class="button serverstat">
-                    <i class="fas fa-server"></i>
+                    <i class="fas fa-server"> Serverstats</i>
                 </div>
             </div>
             <div class="time">
@@ -54,25 +54,25 @@ session_start();
             </div>
             <div class="rightwrapper">
                 <div class="button filter">
-                    <i class="fas fa-filter"></i>
+                    <i class="fas fa-filter"> Filter</i>
                     <a href=""></a>
                 </div>
                 <div class="button mail">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope"> Mail</i>
                     <a href=""></a>
                 </div>
                 <div class="button wind">
-                    <i class="fas fa-wind"></i>
+                    <i class="fas fa-wind"> Weather</i>
                     <a href=""></a>
                 </div>
                 <div class="button ambulance">
-                    <i class="fas fa-ambulance"></i>
+                    <i class="fas fa-ambulance"> EMS</i>
                 </div>
                 <div class="button fire">
-                    <i class="fas fa-fire"></i>
+                    <i class="fas fa-fire"> Fire</i>
                 </div>
                 <div class="button fullscreen">
-                    <i class="fas fa-expand"></i>
+                    <i class="fas fa-expand"> Expand</i>
                 </div>
             </div>
         </div>
@@ -81,6 +81,9 @@ session_start();
             <?php include "sources/main_system.php"; ?>
         </div>
     </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/cad.js"></script>
 </body>
 
 </html>
